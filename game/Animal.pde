@@ -14,7 +14,7 @@ class Animal {
   color aliveColor = color(0, 200, 0);
   color deadColor = color(0);
   
-  final float rotationAngle = 45;
+  final float rotationAngle = PI/4;
   
   Direction facing;
   
