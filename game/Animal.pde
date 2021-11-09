@@ -6,7 +6,7 @@ class Animal {
   float x3;
   float y3;
   
-  float speed = 1; // Rate speed increases while traveling in a straight line.
+  float speed = 2; // Rate speed increases while traveling in a straight line.
   float acceleration = 1;
   
   boolean alive = true;
@@ -29,12 +29,12 @@ class Animal {
   }
   
   void moveForeword() {
-     x1 += facing.xAngle + speed * acceleration;
-     y1 += facing.yAngle + speed * acceleration;
-     x2 += facing.xAngle + speed * acceleration;
-     y2 += facing.yAngle + speed * acceleration;
-     x3 += facing.xAngle + speed * acceleration;
-     y3 += facing.yAngle + speed * acceleration;
+     x1 += facing.xAngle * speed;
+     y1 += facing.yAngle * speed;
+     x2 += facing.xAngle * speed;
+     y2 += facing.yAngle * speed;
+     x3 += facing.xAngle * speed;
+     y3 += facing.yAngle * speed;
   }
   
   void turnLeft() {  
