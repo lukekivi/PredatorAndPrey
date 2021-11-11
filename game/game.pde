@@ -44,7 +44,7 @@ void keyPressed() {
     for (int i = predators.size()-1; i >= 0; i--) { 
     // An ArrayList doesn't know what it is storing so we have to cast the object coming out
     Predator predator = predators.get(i);
-    predator.moveForeword();
+    predator.moveForword();
     }
   }
 }
